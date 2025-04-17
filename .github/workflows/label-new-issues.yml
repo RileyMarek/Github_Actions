@@ -12,5 +12,5 @@ jobs:
       - name: Add "To Do" Label
         uses: actions-ecosystem/action-add-labels@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           labels: "To Do"
