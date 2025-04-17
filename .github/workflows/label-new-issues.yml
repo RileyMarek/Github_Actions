@@ -1,15 +1,14 @@
-name: Label New Issues
+name: Label New Issues as "To Do"
 on:
   issues:
-    types:
-      - opened
+    types: [opened]
 permissions:
-  issues: write
+  issues: write  # Explicitly grants write permission to manage issues
 jobs:
-  add-labels:
+  label_issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Add "To Do" Label
+      - name: Label new issue as "To Do"
         uses: actions-ecosystem/action-add-labels@v1
         with:
           github_token: ${{ secrets.TOKEN }}
