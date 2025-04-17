@@ -2,7 +2,6 @@ name: Test on Merge to Main
 on:
   push:
     branches:
-      - main
       - Task-1
 jobs:
   test:
