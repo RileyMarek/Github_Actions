@@ -12,7 +12,7 @@ jobs:
         uses: actions-ecosystem/action-add-labels@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          labels: "To Do"
+          labels: "To Do" # Updated workflow file (forcing reload)
 
 
 
